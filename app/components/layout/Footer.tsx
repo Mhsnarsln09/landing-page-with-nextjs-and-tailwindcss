@@ -3,7 +3,7 @@ import EmailInput from "../ui/EmailInput";
 
 export default function Footer() {
     return (
-        <footer className="fixed bottom-0 left-0 right-0 bg-footerBg">
+        <footer className=" bg-footerBg">
             <div className="py-12 max-w-[333px] xl:max-w-[1120px] mx-auto px-[30px] xl:px-0">
                 <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
                     <div className="flex flex-col items-center xl:items-start">
@@ -25,8 +25,8 @@ export default function Footer() {
                                 Rezilla
                             </h2>
                         </div>
-                        <p className="text-textColor3 xl:text-textColor2 font-medium text-base mb-4 xl:mb-10">
-                            Lorem ipsum has been the industry <br />standard dummy text
+                        <p className="text-textColor3 xl:text-textColor2 font-medium text-base mb-4 xl:mb-10 text-center xl:text-left">
+                            Lorem ipsum has been the industry standard dummy text
                         </p>
                         <div className="flex items-center space-x-2 mb-2">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

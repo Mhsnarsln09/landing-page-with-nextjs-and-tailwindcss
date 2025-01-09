@@ -1,5 +1,3 @@
-import Navbar from '@/app/components/layout/Navbar'
-
 const Header = () => {
     return (
         <div className="w-full">
@@ -29,7 +27,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <Navbar />
+          
         </div>
     );
 }

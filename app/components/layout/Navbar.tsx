@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <nav className="w-full h-[80px] px-[30px] xl:px-3">
+        <nav className="sticky top-0  bg-white z-50 h-[80px] px-[30px] xl:px-3 shadow-xl">
             <div className='max-w-7xl mx-auto h-full flex items-center justify-between'>
                 <div className="hidden xl:flex items-center text-textColor2">
                     {navItems.map((item) => (
