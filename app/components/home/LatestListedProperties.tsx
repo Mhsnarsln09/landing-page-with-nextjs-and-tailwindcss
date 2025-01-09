@@ -6,6 +6,7 @@ import image6 from "../../assets/images/image-6.jpg";
 import image7 from "../../assets/images/image-7.jpg";
 import image8 from "../../assets/images/image-8.jpg";
 import { DiscountedPriceIcon, NewListingIcon, PopularIcon } from "../ui/Icon";
+import Button from "../ui/Button";
 
 const LatestListedProperties = () => {
     const properties = [
@@ -57,7 +58,7 @@ const LatestListedProperties = () => {
                     </h2>
                     <p className="mt-2.5 text-[13.3px] xl:text-base font-normal text-textColor3">Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
                 </div>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center xl:justify-end">
                     <ButtonGroup />
                 </div>
             </div>
@@ -67,6 +68,11 @@ const LatestListedProperties = () => {
                         <PropertyCard key={index} {...property} />
                     ))}
                 </div>
+            </div>
+
+            <div className="xl:hidden mt-12 max-w-[1440px] px-[30px] xl:pl-[160px] flex justify-center">
+              <Button btnClass="px-7 py-4 border-2 rounded-[30px] text-primary border-primary" title="View more properties"
+              />
             </div>
 
         </div>

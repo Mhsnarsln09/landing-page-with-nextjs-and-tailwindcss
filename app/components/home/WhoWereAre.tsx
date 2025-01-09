@@ -5,7 +5,7 @@ import image5 from "../../assets/images/image-5.jpg";
 
 const WhoWereAre = () => {
     return (
-        <div className='max-w-[393px] xl:max-w-[1440px] mx-auto '>
+        <div className='relative max-w-[393px] xl:max-w-[1440px] mx-auto '>
             <div className='max-xl:hidden absolute left-9'>
                 <svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle opacity="0.5" cx="50.3013" cy="50.3013" r="50" transform="rotate(-30 50.3013 50.3013)" fill="url(#paint0_linear_70_162)" />

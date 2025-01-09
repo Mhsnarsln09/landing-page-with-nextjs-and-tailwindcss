@@ -94,7 +94,7 @@ const Hero = () => {
                 <span className="text-white text-lg font-medium">+</span>
               </div>
             </div>
-            <div className="w-[130px] font-poppins font-medium text-[19.4px] leading-[29.1px] text-textColor2">
+            <div className="w-[130px] font-medium text-[19.4px] leading-[29.1px] text-textColor2">
               72k+ Happy Customers
             </div>
           </div>
@@ -109,7 +109,7 @@ const Hero = () => {
                 className="object-cover"
               />
             </div>
-            <div className="w-[190px] pl-4 font-poppins font-medium text-[19.4px] leading-[29.1px] text-textColor2">
+            <div className="w-[190px] pl-4 font-medium text-[19.4px] leading-[29.1px] text-textColor2">
               200+ New Listings Everyday!
             </div>
           </div>

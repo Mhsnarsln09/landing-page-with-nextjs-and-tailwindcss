@@ -1,11 +1,13 @@
+'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
+import Image, { StaticImageData } from 'next/image';
+import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import Image, { StaticImageData } from 'next/image';
-import { useState } from 'react';
+
 
 interface SlideItem {
     id: number;
@@ -21,9 +23,9 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({
     slides,
-    autoplayDelay = 3000,
-    showNavigation = true,
-    showPagination = true,
+    autoplayDelay,
+    showNavigation,
+    showPagination,
 }) => {
     const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
     const bulletWidth = `calc((100% / ${slides.length}) - 8px)`;
@@ -33,7 +35,7 @@ const Carousel: React.FC<CarouselProps> = ({
 }
 
 .custom-pagination .swiper-pagination-bullet {
-  width: ${bulletWidth};
+  width: ${bulletWidth}!important;
   height: 4px;
   border-radius: 2px;
   background: white;
