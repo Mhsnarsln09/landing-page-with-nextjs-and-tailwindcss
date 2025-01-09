@@ -1,5 +1,6 @@
 'use client'
-
+import { useDispatch } from 'react-redux';
+import { setTarget } from '@/app/store/scrollSlice';
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -37,19 +38,23 @@ const Navbar: React.FC = () => {
     const isActivePath = (path: string): string => {
         return pathname === path ? 'bg-hover border' : 'hover:text-hover'
     }
+    const dispatch = useDispatch();
 
+    const handleScroll = (id: string) => {
+        dispatch(setTarget(id));
+    };
     return (
         <nav className="sticky top-0  bg-white z-50 h-[80px] px-[30px] xl:px-3 shadow-xl">
             <div className='max-w-7xl mx-auto h-full flex items-center justify-between'>
                 <div className="hidden xl:flex items-center text-textColor2">
                     {navItems.map((item) => (
-                        <NavLink
-                            key={item.path}
-                            href={'/'}
-                            className={`rounded-[30px] w-[80px] h-[40px] inline-flex items-center justify-center text-base font-medium ${isActivePath(item.path)}`}
-                        >
-                            {item.label}
-                        </NavLink>
+                         <button
+                         key={item.path}
+                         onClick={() => handleScroll(item.path)}
+                         className={`rounded-[30px] w-[80px] h-[40px] inline-flex items-center justify-center text-base font-medium ${isActivePath(item.path)}`}
+                       >
+                         {item.label}
+                       </button>
                     ))}
                 </div>
                 <div className='flex items-center gap-2'>
