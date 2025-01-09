@@ -63,7 +63,7 @@ const LatestListedProperties = () => {
                 </div>
             </div>
             <div className="py-8 max-w-[1440px]  px-[30px] xl:pl-[160px] xl:overflow-x-auto hide-scrollbar">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 xl:gap-[16rem]">
+                <div className="grid grid-cols-1 xl:grid-cols-4 gap-10 xl:gap-[16rem]">
                     {properties.map((property, index) => (
                         <PropertyCard key={index} {...property} />
                     ))}

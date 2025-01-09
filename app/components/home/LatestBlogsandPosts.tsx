@@ -1,10 +1,10 @@
 'use client'
 
-import BlogCarousel from "./LatestBlogsandPosts/BlogCarousel";
+import BlogCarousel from "./LatestBlogsandPostsItems/BlogCarousel";
 import image9 from "../../assets/images/image-9.jpg"
 import image10 from "../../assets/images/image-10.jpg"
 import image11 from "../../assets/images/image-11.jpg"
-import BlogCard from "./LatestBlogsandPosts/BlogCard";
+import BlogCard from "./LatestBlogsandPostsItems/BlogCard";
 import Button from "../ui/Button";
 
 const LatestBlogsandPosts = () => {
