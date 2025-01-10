@@ -9,7 +9,7 @@ This project leverages powerful and flexible tools, including:
 
 - **Next.js**
 - **TypeScript**
-- **Tailwind CSS*
+- **Tailwind CSS**
 - **Swiper.js**
 - **Redux Toolkit**
 

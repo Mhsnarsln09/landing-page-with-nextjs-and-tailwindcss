@@ -47,6 +47,7 @@ const TestimonialsCarousel: React.FC<TestimonialsCarouselProps> = ({
   position: relative;
   top: 2%!important;
   left: 25%!important;
+  width: max-content !important;
 }
   }
 
